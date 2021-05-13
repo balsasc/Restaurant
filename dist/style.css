@@ -5,14 +5,15 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  /* height: 500vh; */
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  /* height: 100vh; */
 }
 
 .nav-bar {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   padding: 1.5rem;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -21,9 +22,9 @@ body {
 .nav-items {
   list-style: none;
   display: flex;
-  width: 60%;
-  margin: auto;
-  justify-content: space-between;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
 }
 
@@ -31,6 +32,8 @@ body {
   color: #ccc;
   padding: 1rem 1.6rem;
   transition: 0.3s all ease;
+  padding-bottom: 1.3rem;
+  min-height: 100vh;
 }
 
 .nav-item:hover {
@@ -41,12 +44,84 @@ body {
 
 #content {
   color: #fff;
-  padding-top: 12rem; 
-  height: 100vh; 
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+  width: 100vw;
 }
 
-.heading-main {
-  font-size: 4rem;
-  font-weight: 400;
+.heading-main { 
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.desc-main { 
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.title-and-desc {
+  font-weight: 300;
   text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+.about {
+  width: 60%;
+  margin: auto;
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+.home {
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  width: 60%;
+  padding: 2rem;
+  background: #f3f3b7;
+  color: rgb(29, 24, 17);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.info > * { font-size: 1.4rem; }
+
+.info > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+iframe {
+  border: 1px solid rgb(29, 24, 17);
+  max-width: 100%;
+}
+
+@media (max-width: 1900px)
+{
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  iframe{
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  html { font-size: 80%; }
+  .container { text-align: center; }
+}
+
+@media (max-width: 400px) {
+  html { font-size: 62.5%; }
 }

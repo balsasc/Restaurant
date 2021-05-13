@@ -1,5 +1,6 @@
 import createNav from './modules/navbar';
 import createHome from './modules/home';
+import createContact from './modules/contact';
 
 const content = document.querySelector('#content');
 
@@ -15,11 +16,11 @@ document.querySelector('.home').addEventListener('click', () => {
 document.querySelector('.menu').addEventListener('click', () => {
   content.innerHTML = "";
   content.removeAttribute("style");
-  // createHome(menu);
+  // createMenu(content);
 })
 
 document.querySelector('.contact').addEventListener('click', () => {
   content.innerHTML = "";
   content.removeAttribute("style");
-  // createHome(contact);
+  createContact(content);
 })
