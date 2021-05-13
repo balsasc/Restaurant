@@ -1,3 +1,5 @@
 # Restaurant Page
 
-Project made using JS and Webpack
+JavaScript ES6 Module and Webpack practice project.
+
+Visit the demo here: https://balsasc.github.io/Restaurant/
